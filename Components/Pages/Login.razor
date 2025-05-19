@@ -1,0 +1,140 @@
+@page "/login"
+@using Frontend.Services
+@using Frontend.Models
+@inject IAuthService AuthService
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+
+<PageTitle>Login</PageTitle>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card mt-5">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Login</h3>
+                    
+                    @if (!string.IsNullOrEmpty(errorMessage))
+                    {
+                        <div class="alert alert-danger">
+                            @errorMessage
+                        </div>
+                    }
+
+                    <EditForm Model="@loginModel" OnValidSubmit="HandleLogin">
+                        <DataAnnotationsValidator />
+                        <ValidationSummary />
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <InputText id="email" class="form-control" @bind-Value="loginModel.Email" />
+                            <ValidationMessage For="@(() => loginModel.Email)" />
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <label for="password">Password</label>
+                            <InputText type="password" id="password" class="form-control" @bind-Value="loginModel.Password" />
+                            <ValidationMessage For="@(() => loginModel.Password)" />
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <button type="submit" class="btn btn-primary w-100" disabled="@isLoading">
+                                @if (isLoading)
+                                {
+                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                    <span class="ms-2">Loading...</span>
+                                }
+                                else
+                                {
+                                    <span>Login</span>
+                                }
+                            </button>
+                        </div>
+                    </EditForm>
+
+                    <div class="mt-3 text-center">
+                        <a href="/register">Don't have an account? Register</a>
+                    </div>
+                    <div class="mt-2 text-center">
+                        <a href="/forgotpassword">Forgot Password?</a>
+                    </div>
+
+                    <div class="mt-4">
+                        <button class="btn btn-outline-dark w-100" @onclick="HandleGoogleLogin">
+                            Sign in with Google
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private LoginRequest loginModel = new() { Email = "", Password = "" };
+    private bool isLoading;
+    private string? errorMessage;
+
+    private async Task HandleLogin()
+    {
+        try
+        {
+            isLoading = true;
+            errorMessage = null;
+
+            var result = await AuthService.Login(loginModel);
+            if (result.Success)
+            {
+                NavigationManager.NavigateTo("/");
+            }
+            else
+            {
+                errorMessage = result.Message;
+            }
+        }
+        catch
+        {
+            errorMessage = "An error occurred while logging in.";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private async Task HandleGoogleLogin()
+    {
+        try
+        {
+            isLoading = true;
+            errorMessage = null;
+
+            // Initialize Google Sign-In
+            await JSRuntime.InvokeVoidAsync("initializeGoogleSignIn");
+            
+            // Get the ID token from Google
+            var idToken = await JSRuntime.InvokeAsync<string>("signInWithGoogle");
+            
+            if (!string.IsNullOrEmpty(idToken))
+            {
+                var result = await AuthService.GoogleLogin(idToken);
+                if (result.Success)
+                {
+                    NavigationManager.NavigateTo("/");
+                }
+                else
+                {
+                    errorMessage = result.Message;
+                }
+            }
+        }
+        catch
+        {
+            errorMessage = "An error occurred during Google Sign-In. Please try again.";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+} 

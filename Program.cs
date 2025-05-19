@@ -1,28 +1,34 @@
-using Frontend.Components;
+using Microsoft.AspNetCore.Components.Authorization;
+using Microsoft.AspNetCore.Components.Web;
+using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using Blazored.LocalStorage;
+using Frontend;
+using Frontend.Services;
 
-var builder = WebApplication.CreateBuilder(args);
+var builder = WebAssemblyHostBuilder.CreateDefault(args);
+builder.RootComponents.Add<App>("#app");
+builder.RootComponents.Add<HeadOutlet>("head::after");
 
-// Add services to the container.
-builder.Services.AddRazorComponents()
-    .AddInteractiveServerComponents();
+builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("https://localhost:7001") });
+builder.Services.AddBlazoredLocalStorage();
+builder.Services.AddAuthorizationCore();
+builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthStateProvider>();
+builder.Services.AddScoped<IAuthService, AuthService>();
 
-var app = builder.Build();
+// Add more detailed logging
+builder.Logging.SetMinimumLevel(LogLevel.Debug);
+builder.Logging.AddFilter("Microsoft.AspNetCore.Components", LogLevel.Debug);
+builder.Logging.AddFilter("Microsoft.AspNetCore.Components.Web", LogLevel.Debug);
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+var host = builder.Build();
+
+try
 {
-    app.UseExceptionHandler("/Error", createScopeForErrors: true);
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+    await host.RunAsync();
 }
-
-app.UseHttpsRedirection();
-
-
-app.UseAntiforgery();
-
-app.MapStaticAssets();
-app.MapRazorComponents<App>()
-    .AddInteractiveServerRenderMode();
-
-app.Run();
+catch (Exception ex)
+{
+    Console.Error.WriteLine($"Application error: {ex}");
+    Console.Error.WriteLine($"Stack trace: {ex.StackTrace}");
+    throw;
+}

@@ -4,7 +4,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>app.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -18,11 +18,47 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\app.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Frontend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>css/app.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>4kr3jkxjf2</Fingerprint>
+      <Integrity>REGF1H7gEBISQ2C7GqzjULMSztIh8EeRRyM9qdxmOwQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\app.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\bootstrap\bootstrap.min.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Frontend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>css/bootstrap/bootstrap.min.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>9ty18n7i11</Fingerprint>
+      <Integrity>fRpyz8Val7EXUl7Nc9mPzxzgpuN+O49UiylyZJTLZag=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\bootstrap\bootstrap.min.css'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.png'))">
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>favicon.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -36,29 +72,83 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.png'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Frontend.nm0ou8ju7k.bundle.scp.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Frontend.styles.css'))">
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
-      <RelativePath>Frontend.nm0ou8ju7k.bundle.scp.css</RelativePath>
+      <BasePath>/</BasePath>
+      <RelativePath>Frontend.styles.css</RelativePath>
       <AssetKind>All</AssetKind>
-      <AssetMode>Reference</AssetMode>
+      <AssetMode>CurrentProject</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
-      <AssetTraitValue>ProjectBundle</AssetTraitValue>
-      <Fingerprint>nm0ou8ju7k</Fingerprint>
-      <Integrity>L8eH/B2BHwJCCzxrkRNzRb+ROefTptfy1jE+kdMy+Ew=</Integrity>
+      <AssetTraitValue>ApplicationBundle</AssetTraitValue>
+      <Fingerprint>4cnuxpkfze</Fingerprint>
+      <Integrity>pJb7ZV9/J1F2mFlC89OVHOT0JQX98VK+e9jkh3iaTBc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Frontend.nm0ou8ju7k.bundle.scp.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Frontend.styles.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Frontend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>index.html</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>hg07qzq71i</Fingerprint>
+      <Integrity>79vXVdTKzCKb6XgusQ4Bmd4KmDRN/6Avc8mC+ol08sA=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\google-signin.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Frontend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>js/google-signin.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ofokwbealm</Fingerprint>
+      <Integrity>tET2jO9SdeoUFqCXq4IeeTOb7BDMPBd4HZnIRksEWC8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\google-signin.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\googleAuth.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Frontend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>js/googleAuth.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>kv4m80zbh0</Fingerprint>
+      <Integrity>MLoJ7oGOvsAdmOSKBJHotiUQQskaQA0a6wAOJMHtOWU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\googleAuth.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.css'))">
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -76,7 +166,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap-grid.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -94,7 +184,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap-grid.css.map</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -112,7 +202,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap-grid.min.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -130,7 +220,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap-grid.min.css.map</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -148,7 +238,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap-grid.rtl.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -166,7 +256,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -184,7 +274,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -202,7 +292,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -220,7 +310,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap-reboot.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -238,7 +328,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap-reboot.css.map</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -256,7 +346,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap-reboot.min.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -274,7 +364,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap-reboot.min.css.map</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -292,7 +382,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap-reboot.rtl.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -310,7 +400,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -328,7 +418,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -346,7 +436,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -364,7 +454,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap-utilities.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -382,7 +472,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap-utilities.css.map</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -400,7 +490,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap-utilities.min.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -418,7 +508,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap-utilities.min.css.map</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -436,7 +526,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap-utilities.rtl.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -454,7 +544,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -472,7 +562,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -490,7 +580,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -508,7 +598,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap.css.map</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -526,7 +616,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap.min.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -544,7 +634,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap.min.css.map</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -562,7 +652,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap.rtl.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -580,7 +670,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap.rtl.css.map</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -598,7 +688,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap.rtl.min.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -616,7 +706,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/css/bootstrap.rtl.min.css.map</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -634,7 +724,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/js/bootstrap.js</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -652,7 +742,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/js/bootstrap.bundle.js</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -670,7 +760,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/js/bootstrap.bundle.js.map</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -688,7 +778,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/js/bootstrap.bundle.min.js</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -706,7 +796,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/js/bootstrap.bundle.min.js.map</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -724,7 +814,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/js/bootstrap.esm.js</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -742,7 +832,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/js/bootstrap.esm.js.map</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -760,7 +850,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/js/bootstrap.esm.min.js</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -778,7 +868,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/js/bootstrap.esm.min.js.map</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -796,7 +886,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/js/bootstrap.js.map</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -814,7 +904,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/js/bootstrap.min.js</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -832,7 +922,7 @@
       <SourceType>Package</SourceType>
       <SourceId>Frontend</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Frontend</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib/bootstrap/dist/js/bootstrap.min.js.map</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -845,6 +935,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.min.js.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\_framework\blazor.webassembly.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Frontend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>_framework/blazor.webassembly.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName>WasmResource</AssetTraitName>
+      <AssetTraitValue>boot</AssetTraitValue>
+      <Fingerprint>md9yvkcqlf</Fingerprint>
+      <Integrity>+vIfWRbrna1rF+s8xknbrluJxgPx4vfKB0WJ74HdICo=</Integrity>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\_framework\blazor.webassembly.js'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

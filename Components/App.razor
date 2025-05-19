@@ -1,21 +1,51 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Components.Routing
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <base href="/" />
-    <link rel="stylesheet" href="@Assets["lib/bootstrap/dist/css/bootstrap.min.css"]" />
-    <link rel="stylesheet" href="@Assets["app.css"]" />
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="app.css" />
     <link rel="stylesheet" href="@Assets["Frontend.styles.css"]" />
-    <ImportMap />
     <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="js/googleAuth.js"></script>
     <HeadOutlet />
 </head>
 
 <body>
-    <Routes />
-    <script src="_framework/blazor.web.js"></script>
+    <CascadingAuthenticationState>
+        <Router AppAssembly="@typeof(App).Assembly">
+            <Found Context="routeData">
+                <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(Layout.MainLayout)">
+                    <NotAuthorized>
+                        @if (context.User.Identity?.IsAuthenticated != true)
+                        {
+                            <RedirectToLogin />
+                        }
+                        else
+                        {
+                            <p class="alert alert-danger">You are not authorized to access this resource.</p>
+                        }
+                    </NotAuthorized>
+                </AuthorizeRouteView>
+                <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+            </Found>
+            <NotFound>
+                <PageTitle>Not found</PageTitle>
+                <LayoutView Layout="@typeof(Layout.MainLayout)">
+                    <p role="alert">Sorry, there's nothing at this address.</p>
+                </LayoutView>
+            </NotFound>
+        </Router>
+    </CascadingAuthenticationState>
+
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
