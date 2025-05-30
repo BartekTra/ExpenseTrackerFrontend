@@ -39,25 +39,36 @@ namespace Frontend.Services
             try
             {
                 var response = await _httpClient.PostAsJsonAsync("api/account/login", loginModel);
-                var result = await response.Content.ReadFromJsonAsync<AuthResponse>() ?? 
-                    new AuthResponse { Success = false, Message = "Failed to deserialize response", Token = string.Empty };
+                var content = await response.Content.ReadAsStringAsync();
+                Console.WriteLine($"Login response content: {content}"); // Debug log
 
-                if (response.IsSuccessStatusCode && !string.IsNullOrEmpty(result.Token))
+                if (!response.IsSuccessStatusCode)
+                {
+                    return new AuthResponse 
+                    { 
+                        Success = false, 
+                        Message = content, 
+                        Token = string.Empty 
+                    };
+                }
+
+                var result = await response.Content.ReadFromJsonAsync<AuthResponse>(new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                }) ?? new AuthResponse { Success = false, Message = "Failed to deserialize response", Token = string.Empty };
+
+                if (!string.IsNullOrEmpty(result.Token))
                 {
                     await ((CustomAuthStateProvider)_authStateProvider).MarkUserAsAuthenticated(result.Token);
                     _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", result.Token);
                     result.Success = true;
-                }
-                else
-                {
-                    result.Success = false;
-                    result.Message = result.Message ?? "Login failed";
                 }
 
                 return result;
             }
             catch (Exception ex)
             {
+                Console.WriteLine($"Login error: {ex}"); // Debug log
                 return new AuthResponse { Success = false, Message = ex.Message, Token = string.Empty };
             }
         }

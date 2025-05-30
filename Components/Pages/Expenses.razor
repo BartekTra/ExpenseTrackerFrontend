@@ -1,0 +1,202 @@
+@page "/expenses"
+@using Frontend.Models
+@using Frontend.Services
+@using Microsoft.JSInterop
+@inject IExpenseService ExpenseService
+@inject ICategoryService CategoryService
+@inject IJSRuntime JSRuntime
+
+<h3>Wydatki</h3>
+
+<div class="row mb-3">
+    <div class="col">
+        <button class="btn btn-primary" @onclick="() => ShowAddExpenseDialog()">Dodaj wydatek</button>
+    </div>
+    <div class="col-auto">
+        <div class="input-group">
+            <input type="date" class="form-control" @bind="selectedMonth" @bind:format="yyyy-MM-dd" />
+            <button class="btn btn-outline-secondary" @onclick="LoadExpenses">Filtruj</button>
+        </div>
+    </div>
+</div>
+
+@if (expenses == null)
+{
+    <p>Ładowanie...</p>
+}
+else
+{
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Opis</th>
+                    <th>Kategoria</th>
+                    <th>Kwota</th>
+                    <th>Akcje</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var expense in expenses)
+                {
+                    <tr>
+                        <td>@expense.Date.ToShortDateString()</td>
+                        <td>@expense.Description</td>
+                        <td>@(expense.Category?.Name ?? "Brak kategorii")</td>
+                        <td>@expense.Amount.ToString("C")</td>
+                        <td>
+                            <button class="btn btn-sm btn-primary" @onclick="() => ShowEditExpenseDialog(expense)">Edytuj</button>
+                            <button class="btn btn-sm btn-danger" @onclick="() => DeleteExpense(expense.Id)">Usuń</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
+@if (showDialog)
+{
+    <div class="modal fade show" style="display: block;" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">@(editingExpenseId == 0 ? "Dodaj wydatek" : "Edytuj wydatek")</h5>
+                    <button type="button" class="btn-close" @onclick="CloseDialog"></button>
+                </div>
+                <EditForm Model="@currentExpense" OnValidSubmit="SaveExpense">
+                    <DataAnnotationsValidator />
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label class="form-label">Opis</label>
+                            <InputText @bind-Value="currentExpense.Description" class="form-control" />
+                            <ValidationMessage For="@(() => currentExpense.Description)" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Kwota</label>
+                            <InputNumber @bind-Value="currentExpense.Amount" class="form-control" />
+                            <ValidationMessage For="@(() => currentExpense.Amount)" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Data</label>
+                            <InputDate @bind-Value="currentExpense.Date" class="form-control" />
+                            <ValidationMessage For="@(() => currentExpense.Date)" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Kategoria</label>
+                            <InputSelect @bind-Value="currentExpense.CategoryId" class="form-select">
+                                <option value="0">Wybierz kategorię</option>
+                                @foreach (var category in categories)
+                                {
+                                    <option value="@category.Id">@category.Name</option>
+                                }
+                            </InputSelect>
+                            <ValidationMessage For="@(() => currentExpense.CategoryId)" />
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" @onclick="CloseDialog">Anuluj</button>
+                        <button type="submit" class="btn btn-primary">Zapisz</button>
+                    </div>
+                </EditForm>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop fade show"></div>
+}
+
+@code {
+    private List<Expense> expenses = new();
+    private List<Category> categories = new();
+    private bool showDialog;
+    private CreateExpenseDto currentExpense = new() { Date = DateTime.Today };
+    private DateTime selectedMonth = DateTime.Today;
+    private int editingExpenseId;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadCategories();
+        await LoadExpenses();
+    }
+
+    private async Task LoadCategories()
+    {
+        categories = await CategoryService.GetAllAsync();
+    }
+
+    private async Task LoadExpenses()
+    {
+        expenses = await ExpenseService.GetAllAsync();
+        expenses = expenses.Where(e => e.Date.Year == selectedMonth.Year && e.Date.Month == selectedMonth.Month).ToList();
+    }
+
+    private void ShowAddExpenseDialog()
+    {
+        editingExpenseId = 0;
+        currentExpense = new CreateExpenseDto { Date = DateTime.Today };
+        showDialog = true;
+    }
+
+    private void ShowEditExpenseDialog(Expense expense)
+    {
+        editingExpenseId = expense.Id;
+        currentExpense = new CreateExpenseDto
+        {
+            Description = expense.Description,
+            Amount = expense.Amount,
+            Date = expense.Date,
+            CategoryId = expense.CategoryId
+        };
+        showDialog = true;
+    }
+
+    private async Task SaveExpense()
+    {
+        try
+        {
+            if (editingExpenseId == 0)
+            {
+                await ExpenseService.CreateAsync(currentExpense);
+            }
+            else
+            {
+                await ExpenseService.UpdateAsync(new Expense
+                {
+                    Id = editingExpenseId,
+                    Description = currentExpense.Description,
+                    Amount = currentExpense.Amount,
+                    Date = currentExpense.Date,
+                    CategoryId = currentExpense.CategoryId
+                });
+            }
+            showDialog = false;
+            await LoadExpenses();
+        }
+        catch (Exception ex)
+        {
+            await JSRuntime.InvokeVoidAsync("alert", $"Błąd podczas zapisywania wydatku: {ex.Message}");
+        }
+    }
+
+    private async Task DeleteExpense(int id)
+    {
+        if (await JSRuntime.InvokeAsync<bool>("confirm", "Czy na pewno chcesz usunąć ten wydatek?"))
+        {
+            try
+            {
+                await ExpenseService.DeleteAsync(id);
+                await LoadExpenses();
+            }
+            catch (Exception ex)
+            {
+                await JSRuntime.InvokeVoidAsync("alert", $"Błąd podczas usuwania wydatku: {ex.Message}");
+            }
+        }
+    }
+
+    private void CloseDialog()
+    {
+        showDialog = false;
+    }
+} 

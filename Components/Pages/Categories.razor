@@ -1,0 +1,166 @@
+@page "/categories"
+@using Frontend.Models
+@using Frontend.Services
+@using Microsoft.JSInterop
+@using System.ComponentModel.DataAnnotations
+@inject ICategoryService CategoryService
+@inject IJSRuntime JSRuntime
+
+<h3>Kategorie</h3>
+
+<div class="mb-3">
+    <button class="btn btn-primary" @onclick="() => ShowAddCategoryDialog()">Dodaj kategorię</button>
+</div>
+
+@if (errorMessage != null)
+{
+    <div class="alert alert-danger">
+        @errorMessage
+    </div>
+}
+
+@if (categories == null)
+{
+    <p>Ładowanie...</p>
+}
+else
+{
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Nazwa</th>
+                    <th>Akcje</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var category in categories)
+                {
+                    <tr>
+                        <td>@category.Name</td>
+                        <td>
+                            <button class="btn btn-sm btn-primary" @onclick="() => ShowEditCategoryDialog(category)">Edytuj</button>
+                            <button class="btn btn-sm btn-danger" @onclick="() => DeleteCategory(category.Id)">Usuń</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
+@if (showDialog)
+{
+    <div class="modal fade show" style="display: block;" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">@(currentCategory.Id == 0 ? "Dodaj kategorię" : "Edytuj kategorię")</h5>
+                    <button type="button" class="btn-close" @onclick="CloseDialog"></button>
+                </div>
+                <div class="modal-body">
+                    <EditForm Model="@currentCategory" OnValidSubmit="SaveCategory">
+                        <DataAnnotationsValidator />
+                        <ValidationSummary />
+                        <div class="mb-3">
+                            <label class="form-label">Nazwa</label>
+                            <InputText @bind-Value="currentCategory.Name" class="form-control" />
+                            <ValidationMessage For="@(() => currentCategory.Name)" />
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" @onclick="CloseDialog">Anuluj</button>
+                            <button type="submit" class="btn btn-primary">Zapisz</button>
+                        </div>
+                    </EditForm>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop fade show"></div>
+}
+
+@code {
+    private List<Category> categories;
+    private bool showDialog;
+    private Category currentCategory = new Category();
+    private string errorMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadCategories();
+    }
+
+    private async Task LoadCategories()
+    {
+        try
+        {
+            categories = await CategoryService.GetAllAsync();
+            errorMessage = null;
+        }
+        catch (Exception ex)
+        {
+            errorMessage = "Nie udało się załadować kategorii: " + ex.Message;
+        }
+    }
+
+    private void ShowAddCategoryDialog()
+    {
+        currentCategory = new Category();
+        showDialog = true;
+        errorMessage = null;
+    }
+
+    private void ShowEditCategoryDialog(Category category)
+    {
+        currentCategory = new Category
+        {
+            Id = category.Id,
+            Name = category.Name
+        };
+        showDialog = true;
+        errorMessage = null;
+    }
+
+    private async Task SaveCategory()
+    {
+        try
+        {
+            if (currentCategory.Id == 0)
+            {
+                await CategoryService.CreateAsync(currentCategory);
+            }
+            else
+            {
+                await CategoryService.UpdateAsync(currentCategory);
+            }
+            showDialog = false;
+            await LoadCategories();
+        }
+        catch (Exception ex)
+        {
+            errorMessage = "Nie udało się zapisać kategorii: " + ex.Message;
+        }
+    }
+
+    private async Task DeleteCategory(int id)
+    {
+        try
+        {
+            if (await JSRuntime.InvokeAsync<bool>("confirm", new object[] { "Czy na pewno chcesz usunąć tę kategorię?" }))
+            {
+                await CategoryService.DeleteAsync(id);
+                await LoadCategories();
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = "Nie udało się usunąć kategorii: " + ex.Message;
+        }
+    }
+
+    private void CloseDialog()
+    {
+        showDialog = false;
+        errorMessage = null;
+    }
+} 

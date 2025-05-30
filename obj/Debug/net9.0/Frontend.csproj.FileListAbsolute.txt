@@ -7,8 +7,6 @@ C:\Users\Bartek\source\repos\Frontend\bin\Debug\net9.0\wwwroot\_framework\dotnet
 C:\Users\Bartek\source\repos\Frontend\bin\Debug\net9.0\wwwroot\_framework\dotnet.native.3c4wvb350q.wasm
 C:\Users\Bartek\source\repos\Frontend\bin\Debug\net9.0\wwwroot\_framework\dotnet.runtime.cymp1amu5g.js
 C:\Users\Bartek\source\repos\Frontend\bin\Debug\net9.0\wwwroot\_framework\dotnet.runtime.js.map
-C:\Users\Bartek\source\repos\Frontend\bin\Debug\net9.0\wwwroot\_framework\Frontend.i3zg57v6um.pdb
-C:\Users\Bartek\source\repos\Frontend\bin\Debug\net9.0\wwwroot\_framework\Frontend.eprzcj9itm.wasm
 C:\Users\Bartek\source\repos\Frontend\bin\Debug\net9.0\wwwroot\_framework\icudt_CJK.tjcz0u77k5.dat
 C:\Users\Bartek\source\repos\Frontend\bin\Debug\net9.0\wwwroot\_framework\icudt_EFIGS.tptq2av103.dat
 C:\Users\Bartek\source\repos\Frontend\bin\Debug\net9.0\wwwroot\_framework\icudt_no_CJK.lfu7j35m59.dat
@@ -256,7 +254,6 @@ C:\Users\Bartek\source\repos\Frontend\bin\Debug\net9.0\wwwroot\_framework\System
 C:\Users\Bartek\source\repos\Frontend\bin\Debug\net9.0\wwwroot\_framework\System.Linq.Expressions.l5530ew3rl.wasm.gz
 C:\Users\Bartek\source\repos\Frontend\bin\Debug\net9.0\wwwroot\_framework\System.Threading.Thread.cxq9cadks4.wasm.gz
 C:\Users\Bartek\source\repos\Frontend\bin\Debug\net9.0\wwwroot\_framework\Microsoft.Extensions.Configuration.Json.d1nka2rlr8.wasm.gz
-C:\Users\Bartek\source\repos\Frontend\bin\Debug\net9.0\wwwroot\_framework\Frontend.i3zg57v6um.pdb.gz
 C:\Users\Bartek\source\repos\Frontend\bin\Debug\net9.0\wwwroot\_framework\System.Runtime.InteropServices.0kr58pyot5.wasm.gz
 C:\Users\Bartek\source\repos\Frontend\bin\Debug\net9.0\wwwroot\_framework\System.Net.Quic.6rpdsd1cky.wasm.gz
 C:\Users\Bartek\source\repos\Frontend\bin\Debug\net9.0\wwwroot\_framework\System.Runtime.Serialization.45mdkltlcc.wasm.gz
@@ -311,7 +308,6 @@ C:\Users\Bartek\source\repos\Frontend\bin\Debug\net9.0\wwwroot\_framework\System
 C:\Users\Bartek\source\repos\Frontend\bin\Debug\net9.0\wwwroot\_framework\Microsoft.AspNetCore.Authorization.da83xzpz5r.wasm.gz
 C:\Users\Bartek\source\repos\Frontend\bin\Debug\net9.0\wwwroot\_framework\Microsoft.VisualBasic.Core.rov4p20cgi.wasm.gz
 C:\Users\Bartek\source\repos\Frontend\bin\Debug\net9.0\wwwroot\_framework\System.IO.FileSystem.vgbx8s3be4.wasm.gz
-C:\Users\Bartek\source\repos\Frontend\bin\Debug\net9.0\wwwroot\_framework\Frontend.eprzcj9itm.wasm.gz
 C:\Users\Bartek\source\repos\Frontend\bin\Debug\net9.0\wwwroot\_framework\System.Runtime.Extensions.lcwd5nnnzg.wasm.gz
 C:\Users\Bartek\source\repos\Frontend\bin\Debug\net9.0\wwwroot\_framework\System.Xml.XPath.XDocument.dvarvms6fh.wasm.gz
 C:\Users\Bartek\source\repos\Frontend\bin\Debug\net9.0\wwwroot\_framework\System.Globalization.am7w2aiu51.wasm.gz
@@ -1115,9 +1111,6 @@ C:\Users\Bartek\source\repos\Frontend\obj\Debug\net9.0\compressed\326zqjge7o-4b0
 C:\Users\Bartek\source\repos\Frontend\obj\Debug\net9.0\compressed\iw0ae27wof-tjcz0u77k5.gz
 C:\Users\Bartek\source\repos\Frontend\obj\Debug\net9.0\compressed\285b9jwisc-tptq2av103.gz
 C:\Users\Bartek\source\repos\Frontend\obj\Debug\net9.0\compressed\gigkqu8b6v-lfu7j35m59.gz
-C:\Users\Bartek\source\repos\Frontend\obj\Debug\net9.0\compressed\idv3gmpu33-eprzcj9itm.gz
-C:\Users\Bartek\source\repos\Frontend\obj\Debug\net9.0\compressed\820j4a4l7m-i3zg57v6um.gz
-C:\Users\Bartek\source\repos\Frontend\obj\Debug\net9.0\compressed\njn95cf9xo-ovhmkjj1lt.gz
 C:\Users\Bartek\source\repos\Frontend\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\Bartek\source\repos\Frontend\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\Bartek\source\repos\Frontend\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -1132,3 +1125,10 @@ C:\Users\Bartek\source\repos\Frontend\obj\Debug\net9.0\Frontend.dll
 C:\Users\Bartek\source\repos\Frontend\obj\Debug\net9.0\refint\Frontend.dll
 C:\Users\Bartek\source\repos\Frontend\obj\Debug\net9.0\Frontend.pdb
 C:\Users\Bartek\source\repos\Frontend\obj\Debug\net9.0\ref\Frontend.dll
+C:\Users\Bartek\source\repos\frontend\bin\Debug\net9.0\wwwroot\_framework\Frontend.l2cmq15rx8.pdb
+C:\Users\Bartek\source\repos\frontend\bin\Debug\net9.0\wwwroot\_framework\Frontend.bhvmwoyy6j.wasm
+C:\Users\Bartek\source\repos\frontend\bin\Debug\net9.0\wwwroot\_framework\Frontend.l2cmq15rx8.pdb.gz
+C:\Users\Bartek\source\repos\frontend\bin\Debug\net9.0\wwwroot\_framework\Frontend.bhvmwoyy6j.wasm.gz
+C:\Users\Bartek\source\repos\frontend\obj\Debug\net9.0\compressed\idv3gmpu33-bhvmwoyy6j.gz
+C:\Users\Bartek\source\repos\frontend\obj\Debug\net9.0\compressed\820j4a4l7m-l2cmq15rx8.gz
+C:\Users\Bartek\source\repos\frontend\obj\Debug\net9.0\compressed\njn95cf9xo-jescdea2pl.gz
