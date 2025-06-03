@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HGRzIjdQibsw/ylXcFRNobNY+FmlLjcfLq/lxZhu7kU=",
+  "Hash": "VAt8Ggd1avvKKT1qf2rYHp8lN1X7iflzpoHtxSiUhaU=",
   "Source": "Frontend",
   "BasePath": "/",
   "Mode": "Root",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "jescdea2pl",
-      "Integrity": "y1+7C/yEG00u/w9rRe43NenVUK7pwksnz6SCCtMSu7o=",
+      "Fingerprint": "zjrtxluk5n",
+      "Integrity": "v0UEEf/cQOMmWRqawyIcjR+sy/FnqIrXZu5frhrWZzc=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\blazor.boot.json"
@@ -220,8 +220,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "l2cmq15rx8",
-      "Integrity": "nfQBJUksefl/sXYGLRjXiDyHTcKC5eYdCv1umktamjE=",
+      "Fingerprint": "gu5hij2296",
+      "Integrity": "2FWfgGJMMJoGGnnrLLmO5XEJXBn5pvVDlojjnjz3FB8=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\Frontend.pdb"
@@ -241,8 +241,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "bhvmwoyy6j",
-      "Integrity": "IZfFuRQt1Vzm66fS2XcG4L9aPV+p4YlZNjTCCzAmMvY=",
+      "Fingerprint": "s0m20vzply",
+      "Integrity": "/CcsoUHJshF5OQUhGPupX3WF0qt6h9wU37jitIYGYQ4=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\webcil\\Frontend.wasm"
@@ -5687,12 +5687,12 @@
       "OriginalItemSpec": "C:\\Users\\Bartek\\source\\repos\\frontend\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Json.wasm"
     },
     {
-      "Identity": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\820j4a4l7m-l2cmq15rx8.gz",
+      "Identity": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\820j4a4l7m-gu5hij2296.gz",
       "SourceId": "Frontend",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/Frontend#[.{fingerprint=l2cmq15rx8}]!.pdb.gz",
+      "RelativePath": "_framework/Frontend#[.{fingerprint=gu5hij2296}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -5701,8 +5701,8 @@
       "RelatedAsset": "C:\\Users\\Bartek\\source\\repos\\frontend\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Frontend.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "mei2g5tzff",
-      "Integrity": "UmIsZYZMbSyhxCTvZ4qXzMUHrJXAwBvMec8KaeNRvJg=",
+      "Fingerprint": "jrtsta1dov",
+      "Integrity": "r3riqf6Cfvl9tEsHR/Wn3CmtHbdl3NsB4HhYtshvRJs=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Bartek\\source\\repos\\frontend\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Frontend.pdb"
@@ -6884,12 +6884,12 @@
       "OriginalItemSpec": "C:\\Users\\Bartek\\source\\repos\\frontend\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.native.js"
     },
     {
-      "Identity": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\gvj26iw7pi-4cnuxpkfze.gz",
+      "Identity": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\gvj26iw7pi-p1k5vvpun0.gz",
       "SourceId": "Frontend",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "Frontend#[.{fingerprint=4cnuxpkfze}]?.styles.css.gz",
+      "RelativePath": "Frontend#[.{fingerprint=p1k5vvpun0}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -6898,8 +6898,8 @@
       "RelatedAsset": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\scopedcss\\bundle\\Frontend.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "4zwsydvv80",
-      "Integrity": "EARFCbgocp/yI6kJlVDLrEht9grjhJSS/fOeCZGxiqY=",
+      "Fingerprint": "okv7dnt20q",
+      "Integrity": "mNRwYJe4nN5ll3IyMzE0/VJJQi/RoYKeW9st7jaPQFk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\scopedcss\\bundle\\Frontend.styles.css"
@@ -7052,12 +7052,12 @@
       "OriginalItemSpec": "C:\\Users\\Bartek\\source\\repos\\frontend\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.wasm"
     },
     {
-      "Identity": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\i3ua6qcpgb-4cnuxpkfze.gz",
+      "Identity": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\i3ua6qcpgb-p1k5vvpun0.gz",
       "SourceId": "Frontend",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "Frontend#[.{fingerprint=4cnuxpkfze}]!.bundle.scp.css.gz",
+      "RelativePath": "Frontend#[.{fingerprint=p1k5vvpun0}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -7066,8 +7066,8 @@
       "RelatedAsset": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\Frontend.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "4zwsydvv80",
-      "Integrity": "EARFCbgocp/yI6kJlVDLrEht9grjhJSS/fOeCZGxiqY=",
+      "Fingerprint": "okv7dnt20q",
+      "Integrity": "mNRwYJe4nN5ll3IyMzE0/VJJQi/RoYKeW9st7jaPQFk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\Frontend.bundle.scp.css"
@@ -7115,12 +7115,12 @@
       "OriginalItemSpec": "C:\\Users\\Bartek\\source\\repos\\frontend\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.IO.FileSystem.wasm"
     },
     {
-      "Identity": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\idv3gmpu33-bhvmwoyy6j.gz",
+      "Identity": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\idv3gmpu33-s0m20vzply.gz",
       "SourceId": "Frontend",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/Frontend#[.{fingerprint=bhvmwoyy6j}]!.wasm.gz",
+      "RelativePath": "_framework/Frontend#[.{fingerprint=s0m20vzply}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -7129,8 +7129,8 @@
       "RelatedAsset": "C:\\Users\\Bartek\\source\\repos\\frontend\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Frontend.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "wm83gvo25g",
-      "Integrity": "eDpR8BMt1mIbBX8FrY3u36q0Edt+HwqGQuUDUpOQpLc=",
+      "Fingerprint": "kpzg7p40qi",
+      "Integrity": "ODxYaDZLccbT52o58geuBG9+GT8jbkWaV0rIWW0g97o=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Bartek\\source\\repos\\frontend\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Frontend.wasm"
@@ -7934,7 +7934,7 @@
       "OriginalItemSpec": "C:\\Users\\Bartek\\source\\repos\\frontend\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Reflection.Emit.wasm"
     },
     {
-      "Identity": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\njn95cf9xo-jescdea2pl.gz",
+      "Identity": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\njn95cf9xo-zjrtxluk5n.gz",
       "SourceId": "Frontend",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\",
@@ -7948,8 +7948,8 @@
       "RelatedAsset": "C:\\Users\\Bartek\\source\\repos\\frontend\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "7zfsw5ttme",
-      "Integrity": "46Md6zNWKWoI3uAnOxArcuQYcdlycfPzmr6vSIew/BA=",
+      "Fingerprint": "othaaxjj6d",
+      "Integrity": "vNbdlcmRlt5t1AT7SVqcV0zpwtS833rjUOMvLRsXdMY=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Bartek\\source\\repos\\frontend\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -10069,8 +10069,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "4cnuxpkfze",
-      "Integrity": "pJb7ZV9/J1F2mFlC89OVHOT0JQX98VK+e9jkh3iaTBc=",
+      "Fingerprint": "p1k5vvpun0",
+      "Integrity": "vV/zJjS3cmofrdtoYlnxoA1J1w4vGpyz6oDWQ1UJMRU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\scopedcss\\bundle\\Frontend.styles.css"
@@ -10090,8 +10090,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "4cnuxpkfze",
-      "Integrity": "pJb7ZV9/J1F2mFlC89OVHOT0JQX98VK+e9jkh3iaTBc=",
+      "Fingerprint": "p1k5vvpun0",
+      "Integrity": "vV/zJjS3cmofrdtoYlnxoA1J1w4vGpyz6oDWQ1UJMRU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\Frontend.bundle.scp.css"
@@ -11188,11 +11188,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"y1+7C/yEG00u/w9rRe43NenVUK7pwksnz6SCCtMSu7o=\""
+          "Value": "\"v0UEEf/cQOMmWRqawyIcjR+sy/FnqIrXZu5frhrWZzc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 29 May 2025 16:35:59 GMT"
+          "Value": "Tue, 03 Jun 2025 21:38:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11202,18 +11202,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-y1+7C/yEG00u/w9rRe43NenVUK7pwksnz6SCCtMSu7o="
+          "Value": "sha256-v0UEEf/cQOMmWRqawyIcjR+sy/FnqIrXZu5frhrWZzc="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\njn95cf9xo-jescdea2pl.gz",
+      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\njn95cf9xo-zjrtxluk5n.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000077724234"
+          "Quality": "0.000077730276"
         }
       ],
       "ResponseHeaders": [
@@ -11223,15 +11223,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12865"
+          "Value": "12864"
         },
         {
           "Name": "ETag",
-          "Value": "\"46Md6zNWKWoI3uAnOxArcuQYcdlycfPzmr6vSIew/BA=\""
+          "Value": "\"vNbdlcmRlt5t1AT7SVqcV0zpwtS833rjUOMvLRsXdMY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 29 May 2025 16:29:57 GMT"
+          "Value": "Tue, 03 Jun 2025 21:38:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11251,19 +11251,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"y1+7C/yEG00u/w9rRe43NenVUK7pwksnz6SCCtMSu7o=\""
+          "Value": "W/\"v0UEEf/cQOMmWRqawyIcjR+sy/FnqIrXZu5frhrWZzc=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-y1+7C/yEG00u/w9rRe43NenVUK7pwksnz6SCCtMSu7o="
+          "Value": "sha256-v0UEEf/cQOMmWRqawyIcjR+sy/FnqIrXZu5frhrWZzc="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\njn95cf9xo-jescdea2pl.gz",
+      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\njn95cf9xo-zjrtxluk5n.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11272,7 +11272,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12865"
+          "Value": "12864"
         },
         {
           "Name": "Content-Type",
@@ -11280,11 +11280,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"46Md6zNWKWoI3uAnOxArcuQYcdlycfPzmr6vSIew/BA=\""
+          "Value": "\"vNbdlcmRlt5t1AT7SVqcV0zpwtS833rjUOMvLRsXdMY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 29 May 2025 16:29:57 GMT"
+          "Value": "Tue, 03 Jun 2025 21:38:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11302,7 +11302,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-46Md6zNWKWoI3uAnOxArcuQYcdlycfPzmr6vSIew/BA="
+          "Value": "sha256-vNbdlcmRlt5t1AT7SVqcV0zpwtS833rjUOMvLRsXdMY="
         }
       ]
     },
@@ -13530,168 +13530,7 @@
       ]
     },
     {
-      "Route": "_framework/Frontend.bhvmwoyy6j.wasm",
-      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Frontend.wasm",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "111381"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"IZfFuRQt1Vzm66fS2XcG4L9aPV+p4YlZNjTCCzAmMvY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 29 May 2025 15:49:14 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "bhvmwoyy6j"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/Frontend.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-IZfFuRQt1Vzm66fS2XcG4L9aPV+p4YlZNjTCCzAmMvY="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/Frontend.bhvmwoyy6j.wasm",
-      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\idv3gmpu33-bhvmwoyy6j.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000024945743"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "40086"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"eDpR8BMt1mIbBX8FrY3u36q0Edt+HwqGQuUDUpOQpLc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 29 May 2025 15:49:14 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"IZfFuRQt1Vzm66fS2XcG4L9aPV+p4YlZNjTCCzAmMvY=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "bhvmwoyy6j"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/Frontend.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-IZfFuRQt1Vzm66fS2XcG4L9aPV+p4YlZNjTCCzAmMvY="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/Frontend.bhvmwoyy6j.wasm.gz",
-      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\idv3gmpu33-bhvmwoyy6j.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "40086"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"eDpR8BMt1mIbBX8FrY3u36q0Edt+HwqGQuUDUpOQpLc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 29 May 2025 15:49:14 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "bhvmwoyy6j"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/Frontend.wasm.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-eDpR8BMt1mIbBX8FrY3u36q0Edt+HwqGQuUDUpOQpLc="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/Frontend.l2cmq15rx8.pdb",
+      "Route": "_framework/Frontend.gu5hij2296.pdb",
       "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Frontend.pdb",
       "Selectors": [],
       "ResponseHeaders": [
@@ -13701,7 +13540,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "72816"
+          "Value": "72712"
         },
         {
           "Name": "Content-Type",
@@ -13709,11 +13548,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"nfQBJUksefl/sXYGLRjXiDyHTcKC5eYdCv1umktamjE=\""
+          "Value": "\"2FWfgGJMMJoGGnnrLLmO5XEJXBn5pvVDlojjnjz3FB8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 29 May 2025 16:35:59 GMT"
+          "Value": "Tue, 03 Jun 2025 21:38:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13723,7 +13562,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "l2cmq15rx8"
+          "Value": "gu5hij2296"
         },
         {
           "Name": "label",
@@ -13731,18 +13570,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-nfQBJUksefl/sXYGLRjXiDyHTcKC5eYdCv1umktamjE="
+          "Value": "sha256-2FWfgGJMMJoGGnnrLLmO5XEJXBn5pvVDlojjnjz3FB8="
         }
       ]
     },
     {
-      "Route": "_framework/Frontend.l2cmq15rx8.pdb",
-      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\820j4a4l7m-l2cmq15rx8.gz",
+      "Route": "_framework/Frontend.gu5hij2296.pdb",
+      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\820j4a4l7m-gu5hij2296.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000018008932"
+          "Quality": "0.000018035566"
         }
       ],
       "ResponseHeaders": [
@@ -13752,15 +13591,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "55527"
+          "Value": "55445"
         },
         {
           "Name": "ETag",
-          "Value": "\"UmIsZYZMbSyhxCTvZ4qXzMUHrJXAwBvMec8KaeNRvJg=\""
+          "Value": "\"r3riqf6Cfvl9tEsHR/Wn3CmtHbdl3NsB4HhYtshvRJs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 29 May 2025 16:35:59 GMT"
+          "Value": "Tue, 03 Jun 2025 21:38:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13780,13 +13619,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"nfQBJUksefl/sXYGLRjXiDyHTcKC5eYdCv1umktamjE=\""
+          "Value": "W/\"2FWfgGJMMJoGGnnrLLmO5XEJXBn5pvVDlojjnjz3FB8=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "l2cmq15rx8"
+          "Value": "gu5hij2296"
         },
         {
           "Name": "label",
@@ -13794,13 +13633,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-nfQBJUksefl/sXYGLRjXiDyHTcKC5eYdCv1umktamjE="
+          "Value": "sha256-2FWfgGJMMJoGGnnrLLmO5XEJXBn5pvVDlojjnjz3FB8="
         }
       ]
     },
     {
-      "Route": "_framework/Frontend.l2cmq15rx8.pdb.gz",
-      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\820j4a4l7m-l2cmq15rx8.gz",
+      "Route": "_framework/Frontend.gu5hij2296.pdb.gz",
+      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\820j4a4l7m-gu5hij2296.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13809,7 +13648,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "55527"
+          "Value": "55445"
         },
         {
           "Name": "Content-Type",
@@ -13817,11 +13656,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UmIsZYZMbSyhxCTvZ4qXzMUHrJXAwBvMec8KaeNRvJg=\""
+          "Value": "\"r3riqf6Cfvl9tEsHR/Wn3CmtHbdl3NsB4HhYtshvRJs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 29 May 2025 16:35:59 GMT"
+          "Value": "Tue, 03 Jun 2025 21:38:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13839,7 +13678,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "l2cmq15rx8"
+          "Value": "gu5hij2296"
         },
         {
           "Name": "label",
@@ -13847,7 +13686,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-UmIsZYZMbSyhxCTvZ4qXzMUHrJXAwBvMec8KaeNRvJg="
+          "Value": "sha256-r3riqf6Cfvl9tEsHR/Wn3CmtHbdl3NsB4HhYtshvRJs="
         }
       ]
     },
@@ -13862,7 +13701,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "72816"
+          "Value": "72712"
         },
         {
           "Name": "Content-Type",
@@ -13870,11 +13709,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"nfQBJUksefl/sXYGLRjXiDyHTcKC5eYdCv1umktamjE=\""
+          "Value": "\"2FWfgGJMMJoGGnnrLLmO5XEJXBn5pvVDlojjnjz3FB8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 29 May 2025 16:35:59 GMT"
+          "Value": "Tue, 03 Jun 2025 21:38:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13884,18 +13723,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-nfQBJUksefl/sXYGLRjXiDyHTcKC5eYdCv1umktamjE="
+          "Value": "sha256-2FWfgGJMMJoGGnnrLLmO5XEJXBn5pvVDlojjnjz3FB8="
         }
       ]
     },
     {
       "Route": "_framework/Frontend.pdb",
-      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\820j4a4l7m-l2cmq15rx8.gz",
+      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\820j4a4l7m-gu5hij2296.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000018008932"
+          "Quality": "0.000018035566"
         }
       ],
       "ResponseHeaders": [
@@ -13905,15 +13744,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "55527"
+          "Value": "55445"
         },
         {
           "Name": "ETag",
-          "Value": "\"UmIsZYZMbSyhxCTvZ4qXzMUHrJXAwBvMec8KaeNRvJg=\""
+          "Value": "\"r3riqf6Cfvl9tEsHR/Wn3CmtHbdl3NsB4HhYtshvRJs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 29 May 2025 16:35:59 GMT"
+          "Value": "Tue, 03 Jun 2025 21:38:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13933,19 +13772,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"nfQBJUksefl/sXYGLRjXiDyHTcKC5eYdCv1umktamjE=\""
+          "Value": "W/\"2FWfgGJMMJoGGnnrLLmO5XEJXBn5pvVDlojjnjz3FB8=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-nfQBJUksefl/sXYGLRjXiDyHTcKC5eYdCv1umktamjE="
+          "Value": "sha256-2FWfgGJMMJoGGnnrLLmO5XEJXBn5pvVDlojjnjz3FB8="
         }
       ]
     },
     {
       "Route": "_framework/Frontend.pdb.gz",
-      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\820j4a4l7m-l2cmq15rx8.gz",
+      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\820j4a4l7m-gu5hij2296.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13954,7 +13793,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "55527"
+          "Value": "55445"
         },
         {
           "Name": "Content-Type",
@@ -13962,11 +13801,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UmIsZYZMbSyhxCTvZ4qXzMUHrJXAwBvMec8KaeNRvJg=\""
+          "Value": "\"r3riqf6Cfvl9tEsHR/Wn3CmtHbdl3NsB4HhYtshvRJs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 29 May 2025 16:35:59 GMT"
+          "Value": "Tue, 03 Jun 2025 21:38:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13984,7 +13823,168 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-UmIsZYZMbSyhxCTvZ4qXzMUHrJXAwBvMec8KaeNRvJg="
+          "Value": "sha256-r3riqf6Cfvl9tEsHR/Wn3CmtHbdl3NsB4HhYtshvRJs="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Frontend.s0m20vzply.wasm",
+      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Frontend.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "110357"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/CcsoUHJshF5OQUhGPupX3WF0qt6h9wU37jitIYGYQ4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 03 Jun 2025 21:38:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s0m20vzply"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Frontend.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/CcsoUHJshF5OQUhGPupX3WF0qt6h9wU37jitIYGYQ4="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Frontend.s0m20vzply.wasm",
+      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\idv3gmpu33-s0m20vzply.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000025067054"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "39892"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ODxYaDZLccbT52o58geuBG9+GT8jbkWaV0rIWW0g97o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 03 Jun 2025 21:38:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"/CcsoUHJshF5OQUhGPupX3WF0qt6h9wU37jitIYGYQ4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s0m20vzply"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Frontend.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/CcsoUHJshF5OQUhGPupX3WF0qt6h9wU37jitIYGYQ4="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Frontend.s0m20vzply.wasm.gz",
+      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\idv3gmpu33-s0m20vzply.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "39892"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ODxYaDZLccbT52o58geuBG9+GT8jbkWaV0rIWW0g97o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 03 Jun 2025 21:38:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s0m20vzply"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Frontend.wasm.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ODxYaDZLccbT52o58geuBG9+GT8jbkWaV0rIWW0g97o="
         }
       ]
     },
@@ -13999,7 +13999,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "111381"
+          "Value": "110357"
         },
         {
           "Name": "Content-Type",
@@ -14007,11 +14007,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"IZfFuRQt1Vzm66fS2XcG4L9aPV+p4YlZNjTCCzAmMvY=\""
+          "Value": "\"/CcsoUHJshF5OQUhGPupX3WF0qt6h9wU37jitIYGYQ4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 29 May 2025 15:49:14 GMT"
+          "Value": "Tue, 03 Jun 2025 21:38:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14021,18 +14021,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-IZfFuRQt1Vzm66fS2XcG4L9aPV+p4YlZNjTCCzAmMvY="
+          "Value": "sha256-/CcsoUHJshF5OQUhGPupX3WF0qt6h9wU37jitIYGYQ4="
         }
       ]
     },
     {
       "Route": "_framework/Frontend.wasm",
-      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\idv3gmpu33-bhvmwoyy6j.gz",
+      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\idv3gmpu33-s0m20vzply.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000024945743"
+          "Quality": "0.000025067054"
         }
       ],
       "ResponseHeaders": [
@@ -14042,15 +14042,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "40086"
+          "Value": "39892"
         },
         {
           "Name": "ETag",
-          "Value": "\"eDpR8BMt1mIbBX8FrY3u36q0Edt+HwqGQuUDUpOQpLc=\""
+          "Value": "\"ODxYaDZLccbT52o58geuBG9+GT8jbkWaV0rIWW0g97o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 29 May 2025 15:49:14 GMT"
+          "Value": "Tue, 03 Jun 2025 21:38:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14070,19 +14070,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"IZfFuRQt1Vzm66fS2XcG4L9aPV+p4YlZNjTCCzAmMvY=\""
+          "Value": "W/\"/CcsoUHJshF5OQUhGPupX3WF0qt6h9wU37jitIYGYQ4=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-IZfFuRQt1Vzm66fS2XcG4L9aPV+p4YlZNjTCCzAmMvY="
+          "Value": "sha256-/CcsoUHJshF5OQUhGPupX3WF0qt6h9wU37jitIYGYQ4="
         }
       ]
     },
     {
       "Route": "_framework/Frontend.wasm.gz",
-      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\idv3gmpu33-bhvmwoyy6j.gz",
+      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\idv3gmpu33-s0m20vzply.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14091,7 +14091,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "40086"
+          "Value": "39892"
         },
         {
           "Name": "Content-Type",
@@ -14099,11 +14099,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"eDpR8BMt1mIbBX8FrY3u36q0Edt+HwqGQuUDUpOQpLc=\""
+          "Value": "\"ODxYaDZLccbT52o58geuBG9+GT8jbkWaV0rIWW0g97o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 29 May 2025 15:49:14 GMT"
+          "Value": "Tue, 03 Jun 2025 21:38:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14121,7 +14121,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-eDpR8BMt1mIbBX8FrY3u36q0Edt+HwqGQuUDUpOQpLc="
+          "Value": "sha256-ODxYaDZLccbT52o58geuBG9+GT8jbkWaV0rIWW0g97o="
         }
       ]
     },
@@ -75298,13 +75298,13 @@
       ]
     },
     {
-      "Route": "Frontend.4cnuxpkfze.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\i3ua6qcpgb-4cnuxpkfze.gz",
+      "Route": "Frontend.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\i3ua6qcpgb-p1k5vvpun0.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000565930956"
+          "Quality": "0.000563063063"
         }
       ],
       "ResponseHeaders": [
@@ -75314,19 +75314,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1766"
+          "Value": "1775"
         },
         {
           "Name": "ETag",
-          "Value": "\"EARFCbgocp/yI6kJlVDLrEht9grjhJSS/fOeCZGxiqY=\""
+          "Value": "\"mNRwYJe4nN5ll3IyMzE0/VJJQi/RoYKeW9st7jaPQFk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 23:07:30 GMT"
+          "Value": "Tue, 03 Jun 2025 21:36:56 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -75342,26 +75342,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"pJb7ZV9/J1F2mFlC89OVHOT0JQX98VK+e9jkh3iaTBc=\""
+          "Value": "W/\"vV/zJjS3cmofrdtoYlnxoA1J1w4vGpyz6oDWQ1UJMRU=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "4cnuxpkfze"
-        },
-        {
-          "Name": "label",
-          "Value": "Frontend.bundle.scp.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-pJb7ZV9/J1F2mFlC89OVHOT0JQX98VK+e9jkh3iaTBc="
+          "Value": "sha256-vV/zJjS3cmofrdtoYlnxoA1J1w4vGpyz6oDWQ1UJMRU="
         }
       ]
     },
     {
-      "Route": "Frontend.4cnuxpkfze.bundle.scp.css",
+      "Route": "Frontend.bundle.scp.css",
       "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\Frontend.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -75371,7 +75363,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5929"
+          "Value": "5959"
         },
         {
           "Name": "Content-Type",
@@ -75379,11 +75371,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pJb7ZV9/J1F2mFlC89OVHOT0JQX98VK+e9jkh3iaTBc=\""
+          "Value": "\"vV/zJjS3cmofrdtoYlnxoA1J1w4vGpyz6oDWQ1UJMRU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 23:07:30 GMT"
+          "Value": "Tue, 03 Jun 2025 21:36:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vV/zJjS3cmofrdtoYlnxoA1J1w4vGpyz6oDWQ1UJMRU="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\i3ua6qcpgb-p1k5vvpun0.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1775"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mNRwYJe4nN5ll3IyMzE0/VJJQi/RoYKeW9st7jaPQFk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 03 Jun 2025 21:36:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mNRwYJe4nN5ll3IyMzE0/VJJQi/RoYKeW9st7jaPQFk="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend.p1k5vvpun0.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\i3ua6qcpgb-p1k5vvpun0.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000563063063"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1775"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mNRwYJe4nN5ll3IyMzE0/VJJQi/RoYKeW9st7jaPQFk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 03 Jun 2025 21:36:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vV/zJjS3cmofrdtoYlnxoA1J1w4vGpyz6oDWQ1UJMRU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p1k5vvpun0"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vV/zJjS3cmofrdtoYlnxoA1J1w4vGpyz6oDWQ1UJMRU="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend.p1k5vvpun0.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\Frontend.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5959"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vV/zJjS3cmofrdtoYlnxoA1J1w4vGpyz6oDWQ1UJMRU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 03 Jun 2025 21:36:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -75393,7 +75530,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4cnuxpkfze"
+          "Value": "p1k5vvpun0"
         },
         {
           "Name": "label",
@@ -75401,13 +75538,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-pJb7ZV9/J1F2mFlC89OVHOT0JQX98VK+e9jkh3iaTBc="
+          "Value": "sha256-vV/zJjS3cmofrdtoYlnxoA1J1w4vGpyz6oDWQ1UJMRU="
         }
       ]
     },
     {
-      "Route": "Frontend.4cnuxpkfze.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\i3ua6qcpgb-4cnuxpkfze.gz",
+      "Route": "Frontend.p1k5vvpun0.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\i3ua6qcpgb-p1k5vvpun0.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -75416,7 +75553,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1766"
+          "Value": "1775"
         },
         {
           "Name": "Content-Type",
@@ -75424,11 +75561,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"EARFCbgocp/yI6kJlVDLrEht9grjhJSS/fOeCZGxiqY=\""
+          "Value": "\"mNRwYJe4nN5ll3IyMzE0/VJJQi/RoYKeW9st7jaPQFk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 23:07:30 GMT"
+          "Value": "Tue, 03 Jun 2025 21:36:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -75446,7 +75583,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4cnuxpkfze"
+          "Value": "p1k5vvpun0"
         },
         {
           "Name": "label",
@@ -75454,18 +75591,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-EARFCbgocp/yI6kJlVDLrEht9grjhJSS/fOeCZGxiqY="
+          "Value": "sha256-mNRwYJe4nN5ll3IyMzE0/VJJQi/RoYKeW9st7jaPQFk="
         }
       ]
     },
     {
-      "Route": "Frontend.4cnuxpkfze.styles.css",
-      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\gvj26iw7pi-4cnuxpkfze.gz",
+      "Route": "Frontend.p1k5vvpun0.styles.css",
+      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\gvj26iw7pi-p1k5vvpun0.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000565930956"
+          "Quality": "0.000563063063"
         }
       ],
       "ResponseHeaders": [
@@ -75475,15 +75612,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1766"
+          "Value": "1775"
         },
         {
           "Name": "ETag",
-          "Value": "\"EARFCbgocp/yI6kJlVDLrEht9grjhJSS/fOeCZGxiqY=\""
+          "Value": "\"mNRwYJe4nN5ll3IyMzE0/VJJQi/RoYKeW9st7jaPQFk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 23:07:30 GMT"
+          "Value": "Tue, 03 Jun 2025 21:36:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -75503,13 +75640,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"pJb7ZV9/J1F2mFlC89OVHOT0JQX98VK+e9jkh3iaTBc=\""
+          "Value": "W/\"vV/zJjS3cmofrdtoYlnxoA1J1w4vGpyz6oDWQ1UJMRU=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4cnuxpkfze"
+          "Value": "p1k5vvpun0"
         },
         {
           "Name": "label",
@@ -75517,12 +75654,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-pJb7ZV9/J1F2mFlC89OVHOT0JQX98VK+e9jkh3iaTBc="
+          "Value": "sha256-vV/zJjS3cmofrdtoYlnxoA1J1w4vGpyz6oDWQ1UJMRU="
         }
       ]
     },
     {
-      "Route": "Frontend.4cnuxpkfze.styles.css",
+      "Route": "Frontend.p1k5vvpun0.styles.css",
       "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\scopedcss\\bundle\\Frontend.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -75532,7 +75669,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5929"
+          "Value": "5959"
         },
         {
           "Name": "Content-Type",
@@ -75540,11 +75677,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pJb7ZV9/J1F2mFlC89OVHOT0JQX98VK+e9jkh3iaTBc=\""
+          "Value": "\"vV/zJjS3cmofrdtoYlnxoA1J1w4vGpyz6oDWQ1UJMRU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 23:07:30 GMT"
+          "Value": "Tue, 03 Jun 2025 21:36:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -75554,7 +75691,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4cnuxpkfze"
+          "Value": "p1k5vvpun0"
         },
         {
           "Name": "label",
@@ -75562,13 +75699,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-pJb7ZV9/J1F2mFlC89OVHOT0JQX98VK+e9jkh3iaTBc="
+          "Value": "sha256-vV/zJjS3cmofrdtoYlnxoA1J1w4vGpyz6oDWQ1UJMRU="
         }
       ]
     },
     {
-      "Route": "Frontend.4cnuxpkfze.styles.css.gz",
-      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\gvj26iw7pi-4cnuxpkfze.gz",
+      "Route": "Frontend.p1k5vvpun0.styles.css.gz",
+      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\gvj26iw7pi-p1k5vvpun0.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -75577,7 +75714,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1766"
+          "Value": "1775"
         },
         {
           "Name": "Content-Type",
@@ -75585,11 +75722,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"EARFCbgocp/yI6kJlVDLrEht9grjhJSS/fOeCZGxiqY=\""
+          "Value": "\"mNRwYJe4nN5ll3IyMzE0/VJJQi/RoYKeW9st7jaPQFk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 23:07:30 GMT"
+          "Value": "Tue, 03 Jun 2025 21:36:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -75607,7 +75744,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4cnuxpkfze"
+          "Value": "p1k5vvpun0"
         },
         {
           "Name": "label",
@@ -75615,155 +75752,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-EARFCbgocp/yI6kJlVDLrEht9grjhJSS/fOeCZGxiqY="
-        }
-      ]
-    },
-    {
-      "Route": "Frontend.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\i3ua6qcpgb-4cnuxpkfze.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000565930956"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1766"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"EARFCbgocp/yI6kJlVDLrEht9grjhJSS/fOeCZGxiqY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 23:07:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"pJb7ZV9/J1F2mFlC89OVHOT0JQX98VK+e9jkh3iaTBc=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-pJb7ZV9/J1F2mFlC89OVHOT0JQX98VK+e9jkh3iaTBc="
-        }
-      ]
-    },
-    {
-      "Route": "Frontend.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\Frontend.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5929"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"pJb7ZV9/J1F2mFlC89OVHOT0JQX98VK+e9jkh3iaTBc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 23:07:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-pJb7ZV9/J1F2mFlC89OVHOT0JQX98VK+e9jkh3iaTBc="
-        }
-      ]
-    },
-    {
-      "Route": "Frontend.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\i3ua6qcpgb-4cnuxpkfze.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1766"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"EARFCbgocp/yI6kJlVDLrEht9grjhJSS/fOeCZGxiqY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 23:07:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-EARFCbgocp/yI6kJlVDLrEht9grjhJSS/fOeCZGxiqY="
+          "Value": "sha256-mNRwYJe4nN5ll3IyMzE0/VJJQi/RoYKeW9st7jaPQFk="
         }
       ]
     },
     {
       "Route": "Frontend.styles.css",
-      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\gvj26iw7pi-4cnuxpkfze.gz",
+      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\gvj26iw7pi-p1k5vvpun0.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000565930956"
+          "Quality": "0.000563063063"
         }
       ],
       "ResponseHeaders": [
@@ -75773,15 +75773,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1766"
+          "Value": "1775"
         },
         {
           "Name": "ETag",
-          "Value": "\"EARFCbgocp/yI6kJlVDLrEht9grjhJSS/fOeCZGxiqY=\""
+          "Value": "\"mNRwYJe4nN5ll3IyMzE0/VJJQi/RoYKeW9st7jaPQFk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 23:07:30 GMT"
+          "Value": "Tue, 03 Jun 2025 21:36:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -75801,13 +75801,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"pJb7ZV9/J1F2mFlC89OVHOT0JQX98VK+e9jkh3iaTBc=\""
+          "Value": "W/\"vV/zJjS3cmofrdtoYlnxoA1J1w4vGpyz6oDWQ1UJMRU=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pJb7ZV9/J1F2mFlC89OVHOT0JQX98VK+e9jkh3iaTBc="
+          "Value": "sha256-vV/zJjS3cmofrdtoYlnxoA1J1w4vGpyz6oDWQ1UJMRU="
         }
       ]
     },
@@ -75822,7 +75822,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5929"
+          "Value": "5959"
         },
         {
           "Name": "Content-Type",
@@ -75830,11 +75830,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pJb7ZV9/J1F2mFlC89OVHOT0JQX98VK+e9jkh3iaTBc=\""
+          "Value": "\"vV/zJjS3cmofrdtoYlnxoA1J1w4vGpyz6oDWQ1UJMRU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 23:07:30 GMT"
+          "Value": "Tue, 03 Jun 2025 21:36:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -75844,13 +75844,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pJb7ZV9/J1F2mFlC89OVHOT0JQX98VK+e9jkh3iaTBc="
+          "Value": "sha256-vV/zJjS3cmofrdtoYlnxoA1J1w4vGpyz6oDWQ1UJMRU="
         }
       ]
     },
     {
       "Route": "Frontend.styles.css.gz",
-      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\gvj26iw7pi-4cnuxpkfze.gz",
+      "AssetFile": "C:\\Users\\Bartek\\source\\repos\\frontend\\obj\\Debug\\net9.0\\compressed\\gvj26iw7pi-p1k5vvpun0.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -75859,7 +75859,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1766"
+          "Value": "1775"
         },
         {
           "Name": "Content-Type",
@@ -75867,11 +75867,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"EARFCbgocp/yI6kJlVDLrEht9grjhJSS/fOeCZGxiqY=\""
+          "Value": "\"mNRwYJe4nN5ll3IyMzE0/VJJQi/RoYKeW9st7jaPQFk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 23:07:30 GMT"
+          "Value": "Tue, 03 Jun 2025 21:36:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -75889,7 +75889,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-EARFCbgocp/yI6kJlVDLrEht9grjhJSS/fOeCZGxiqY="
+          "Value": "sha256-mNRwYJe4nN5ll3IyMzE0/VJJQi/RoYKeW9st7jaPQFk="
         }
       ]
     },
