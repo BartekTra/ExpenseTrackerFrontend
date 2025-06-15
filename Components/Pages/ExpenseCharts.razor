@@ -1,0 +1,161 @@
+@page "/expense-charts"
+@using Frontend.Models
+@using Frontend.Services
+@using System.Globalization
+@using Microsoft.JSInterop
+@inject IExpenseService ExpenseService
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+
+<div class="container mt-4">
+    <h2>Wykresy wydatków</h2>
+
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="startDate">Data początkowa:</label>
+                <input type="date" class="form-control" id="startDate" @bind="startDate" @bind:event="oninput" @onchange="OnDateRangeChanged" />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="endDate">Data końcowa:</label>
+                <input type="date" class="form-control" id="endDate" @bind="endDate" @bind:event="oninput" @onchange="OnDateRangeChanged" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Wydatki według kategorii</h5>
+                    <canvas id="pieChart"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Wydatki w czasie</h5>
+                    <canvas id="lineChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private DateTime startDate = DateTime.Now.AddMonths(-1);
+    private DateTime endDate = DateTime.Now;
+    private List<CategoryExpenseSummaryDto> categoryExpenses = new();
+    private List<MonthlyExpenseTotalDto> monthlyExpenses = new();
+    private IJSObjectReference? pieChart;
+    private IJSObjectReference? lineChart;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadData();
+    }
+
+    private async Task OnDateRangeChanged()
+    {
+        await LoadData();
+    }
+
+    private async Task LoadData()
+    {
+        try
+        {
+            categoryExpenses = await ExpenseService.GetCategoryExpenseSummary(startDate, endDate);
+            monthlyExpenses = await ExpenseService.GetMonthlyExpenseTotals(startDate, endDate);
+            await UpdateCharts();
+        }
+        catch (Exception ex)
+        {
+            // Handle error
+            Console.WriteLine($"Error loading data: {ex.Message}");
+        }
+    }
+
+    private async Task UpdateCharts()
+    {
+        // Destroy existing charts if they exist
+        if (pieChart != null)
+        {
+            await JSRuntime.InvokeVoidAsync("destroyChart", "pieChart");
+        }
+        if (lineChart != null)
+        {
+            await JSRuntime.InvokeVoidAsync("destroyChart", "lineChart");
+        }
+
+        // Pie Chart
+        var pieChartData = new
+        {
+            type = "pie",
+            data = new
+            {
+                labels = categoryExpenses.Select(x => x.CategoryName).ToArray(),
+                datasets = new[]
+                {
+                    new
+                    {
+                        data = categoryExpenses.Select(x => x.TotalAmount).ToArray(),
+                        backgroundColor = new[] { "#FF6384", "#36A2EB", "#FFCE56", "#4BC0C0", "#9966FF" }
+                    }
+                }
+            }
+        };
+        pieChart = await JSRuntime.InvokeAsync<IJSObjectReference>("createChart", "pieChart", pieChartData);
+
+        // Line Chart
+        var lineChartData = new
+        {
+            type = "line",
+            data = new
+            {
+                labels = monthlyExpenses.Select(x => $"{x.Year}-{x.Month}").ToArray(),
+                datasets = new[]
+                {
+                    new
+                    {
+                        label = "Wydatki miesięczne",
+                        data = monthlyExpenses.Select(x => x.TotalAmount).ToArray(),
+                        borderColor = "#36A2EB",
+                        fill = false
+                    }
+                }
+            },
+            options = new
+            {
+                scales = new
+                {
+                    y = new
+                    {
+                        beginAtZero = true,
+                        ticks = new
+                        {
+                            callback = "function(value) { return value + ' zł'; }"
+                        }
+                    }
+                }
+            }
+        };
+        lineChart = await JSRuntime.InvokeAsync<IJSObjectReference>("createChart", "lineChart", lineChartData);
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        if (pieChart != null)
+        {
+            await JSRuntime.InvokeVoidAsync("destroyChart", "pieChart");
+            await pieChart.DisposeAsync();
+        }
+        if (lineChart != null)
+        {
+            await JSRuntime.InvokeVoidAsync("destroyChart", "lineChart");
+            await lineChart.DisposeAsync();
+        }
+    }
+} 

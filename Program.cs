@@ -24,6 +24,10 @@ builder.Logging.AddFilter("Microsoft.AspNetCore.Components.Web", LogLevel.Debug)
 
 var host = builder.Build();
 
+// Initialize auth state
+var authService = host.Services.GetRequiredService<IAuthService>();
+await authService.InitializeAuthState();
+
 try
 {
     await host.RunAsync();

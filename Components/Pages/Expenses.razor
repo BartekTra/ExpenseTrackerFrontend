@@ -12,12 +12,6 @@
     <div class="col">
         <button class="btn btn-primary" @onclick="() => ShowAddExpenseDialog()">Dodaj wydatek</button>
     </div>
-    <div class="col-auto">
-        <div class="input-group">
-            <input type="date" class="form-control" @bind="selectedMonth" @bind:format="yyyy-MM-dd" />
-            <button class="btn btn-outline-secondary" @onclick="LoadExpenses">Filtruj</button>
-        </div>
-    </div>
 </div>
 
 @if (expenses == null)
@@ -38,7 +32,7 @@ else
                 </tr>
             </thead>
             <tbody>
-                @foreach (var expense in expenses)
+                @foreach (var expense in expenses.OrderByDescending(e => e.Date))
                 {
                     <tr>
                         <td>@expense.Date.ToShortDateString()</td>
@@ -111,7 +105,6 @@ else
     private List<Category> categories = new();
     private bool showDialog;
     private CreateExpenseDto currentExpense = new() { Date = DateTime.Today };
-    private DateTime selectedMonth = DateTime.Today;
     private int editingExpenseId;
 
     protected override async Task OnInitializedAsync()
@@ -128,7 +121,6 @@ else
     private async Task LoadExpenses()
     {
         expenses = await ExpenseService.GetAllAsync();
-        expenses = expenses.Where(e => e.Date.Year == selectedMonth.Year && e.Date.Month == selectedMonth.Month).ToList();
     }
 
     private void ShowAddExpenseDialog()

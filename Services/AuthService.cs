@@ -17,6 +17,7 @@ namespace Frontend.Services
         Task<AuthResponse> GoogleLogin(string idToken);
         Task Logout();
         Task<string> GetToken();
+        Task InitializeAuthState();
     }
 
     public class AuthService : IAuthService
@@ -32,6 +33,15 @@ namespace Frontend.Services
             _httpClient = httpClient;
             _authStateProvider = authStateProvider;
             _localStorage = localStorage;
+        }
+
+        public async Task InitializeAuthState()
+        {
+            var token = await GetToken();
+            if (!string.IsNullOrEmpty(token))
+            {
+                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            }
         }
 
         public async Task<AuthResponse> Login(LoginRequest loginModel)
@@ -59,6 +69,7 @@ namespace Frontend.Services
 
                 if (!string.IsNullOrEmpty(result.Token))
                 {
+                    await _localStorage.SetItemAsync("authToken", result.Token);
                     await ((CustomAuthStateProvider)_authStateProvider).MarkUserAsAuthenticated(result.Token);
                     _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", result.Token);
                     result.Success = true;
@@ -170,6 +181,7 @@ namespace Frontend.Services
 
                 if (response.IsSuccessStatusCode && !string.IsNullOrEmpty(result.Token))
                 {
+                    await _localStorage.SetItemAsync("authToken", result.Token);
                     await ((CustomAuthStateProvider)_authStateProvider).MarkUserAsAuthenticated(result.Token);
                     _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", result.Token);
                     result.Success = true;
@@ -190,6 +202,7 @@ namespace Frontend.Services
 
         public async Task Logout()
         {
+            await _localStorage.RemoveItemAsync("authToken");
             await ((CustomAuthStateProvider)_authStateProvider).MarkUserAsLoggedOut();
             _httpClient.DefaultRequestHeaders.Authorization = null;
         }

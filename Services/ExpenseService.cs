@@ -14,6 +14,8 @@ namespace Frontend.Services
         Task DeleteAsync(int id);
         Task<MonthlyExpenseTotalDto> GetMonthlyTotalAsync(int year, int month);
         Task<List<CategoryExpenseSummaryDto>> GetCategorySummariesAsync(int year, int month);
+        Task<List<CategoryExpenseSummaryDto>> GetCategoryExpenseSummary(DateTime startDate, DateTime endDate);
+        Task<List<MonthlyExpenseTotalDto>> GetMonthlyExpenseTotals(DateTime startDate, DateTime endDate);
     }
 
     public class ExpenseService : IExpenseService
@@ -83,6 +85,18 @@ namespace Frontend.Services
         public async Task<List<CategoryExpenseSummaryDto>> GetCategorySummariesAsync(int year, int month)
         {
             return await _httpClient.GetFromJsonAsync<List<CategoryExpenseSummaryDto>>($"api/Expenses/summary/categories?year={year}&month={month}");
+        }
+
+        public async Task<List<CategoryExpenseSummaryDto>> GetCategoryExpenseSummary(DateTime startDate, DateTime endDate)
+        {
+            return await _httpClient.GetFromJsonAsync<List<CategoryExpenseSummaryDto>>(
+                $"api/Expenses/summary/categories/range?startDate={startDate:yyyy-MM-dd}&endDate={endDate:yyyy-MM-dd}");
+        }
+
+        public async Task<List<MonthlyExpenseTotalDto>> GetMonthlyExpenseTotals(DateTime startDate, DateTime endDate)
+        {
+            return await _httpClient.GetFromJsonAsync<List<MonthlyExpenseTotalDto>>(
+                $"api/Expenses/summary/monthly/range?startDate={startDate:yyyy-MM-dd}&endDate={endDate:yyyy-MM-dd}");
         }
     }
 } 
